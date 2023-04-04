@@ -9,6 +9,6 @@ tabs = ['Главная', 'Популярное', 'Новое', 'Сообщес�
 for tab in tabs:
     driver.find_element_by_link_text(tab).click()
     assert tab in driver.title, f'Ошибка: не удалось перейти на вкладку {tab}'
-    time.sleep(2)
+    time.sleep(1)
 
 driver.quit()
